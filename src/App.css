@@ -1,38 +1,103 @@
 .App {
-  text-align: center;
+	text-align: center;
+	background-color: seashell;
+	font-family: "Gruppo", sans-serif;
+	min-height: 900px;
+}
+.title {
+	display: block;
+	font-size: 3em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+	text-decoration-line: underline;
+	color: rosybrown;
+}
+.book-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.book-sku {
+	outline: 3px black;
+	width: 30%;
+	height: 30%;
+	font-size: medium;
+	margin: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.favorite {
+	cursor: pointer;
+	align-items: start;
+	padding-top: 35px;
+}
+.imageIcon {
+	display: inline-flex;
+}
+.cart {
+	display: inline-flex;
+	margin-top: 4px;
+	margin-bottom: 5px;
+	font-size: large;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cartButton {
+	margin-left: 15px;
+	margin-bottom: 5px;
+	margin-top: -6px;
+	font-size: medium;
+	background-color: lightgray;
 }
 
-.App-link {
-  color: #61dafb;
+.price {
+	font-size: x-large;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.total {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 32px;
+	margin-top: 0px;
+}
+
+.routes {
+	display: inline-flex;
+	display: flex;
+	justify-content: flex-start;
+	margin-right: 750px;
+}
+
+h2 {
+	padding: 4px;
+	color: rosybrown;
+}
+
+.navRoutes {
+	display: inline-flex;
+	color: rosybrown;
+}
+
+.cart-layout {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cart-page {
+	background-color: seashell;
+}
+
+.book-container-cart {
+	display: inline;
+	margin-bottom: 25px;
+}
+
+.price-quantity {
+	display: inline;
+}
+
+a {
+	color: rosybrown;
+	text-decoration: none;
 }
